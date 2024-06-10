@@ -43,18 +43,19 @@ Use o Postman ou outra ferramenta para enviar requisições para a função Lamb
 {
   "body": "{\"operation\": \"create\", \"tableName\": \"students\", \"payload\": {\"id\": \"123\", \"nome\": \"Cristiano Araújo\"}}"
 }
-
+```
 ```json
 {
   "body": "{\"operation\": \"read\", \"tableName\": \"students\", \"payload\": {\"id\": \"123\"}}"
 }
-
+```
 ```json
 {
   "body": "{\"operation\": \"update\", \"tableName\": \"students\", \"payload\": {\"key\": {\"id\": \"123\"}, \"updateExpression\": \"set nome = :nome\", \"expressionAttributeValues\": {\":nome\": \"Cristiano Arcanjo\"}}"
 }
-
+```
 ```json
 {
   "body": "{\"operation\": \"delete\", \"tableName\": \"students\", \"payload\": {\"id\": \"123\"}}"
 }
+```
